@@ -1,7 +1,7 @@
 $(function () {
     var margin = {top: 20, right: 120, bottom: 20, left: 120},
         width = 960 - margin.right - margin.left,
-        height = 800 - margin.top - margin.bottom;
+        height = 600 - margin.top - margin.bottom;
 
     var i = 0,
         duration = 750,
@@ -13,14 +13,14 @@ $(function () {
     var diagonal = d3.svg.diagonal()
         .projection(function(d) { return [d.y, d.x]; });
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("section").append("svg")
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("data.json", function(error, flare) {
-        root = flare;
+    d3.json("data.json", function(error, AboutMe) {
+        root = AboutMe;
         root.x0 = height / 2;
         root.y0 = 0;
 
@@ -32,7 +32,11 @@ $(function () {
             }
         }
 
+        // Initialize the display to show a few nodes.
         root.children.forEach(collapse);
+        click(root.children[0]);
+        click(root.children[1]);
+
         update(root);
     });
 
@@ -136,5 +140,6 @@ $(function () {
         }
         update(d);
     }
+
 
 });

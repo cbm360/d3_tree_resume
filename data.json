@@ -1,15 +1,32 @@
 {
-  "name": "Qualification and Skills",
+  "name": "AboutMe",
   "children": [
     {
-      "name": "Scrum",
+      "name": "Qualifications",
       "children": [
         {
-          "name": "CAP Logistics",
+          "name": "Scrum",
           "children": [
-            {"name": "Proprietary CRM"},
-            {"name": "REST API"},
-            {"name": "Geospatial business analysis platform"}
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"},
+                {"name": "REST API"},
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
+          ]
+        },
+        {
+          "name": "UI/UX Design",
+          "children": [
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"},
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
           ]
         }
       ]
@@ -32,25 +49,47 @@
         {
           "name": "jQuery",
           "children": [
-            {"name": "job or project where used"},
-            {"name": "job or project where used"},
-            {"name": "job or project where used"}
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"},
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
           ]
         },
         {
           "name": "KnockoutJS",
           "children": [
-            {"name": "job or project where used"},
-            {"name": "job or project where used"},
-            {"name": "job or project where used"}
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"}
+              ]
+            }
           ]
         },
         {
           "name": "EXTJS",
           "children": [
-            {"name": "job or project where used"},
-            {"name": "job or project where used"},
-            {"name": "job or project where used"}
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MapBox/Leaflet",
+          "children": [
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"},
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
           ]
         }
       ]
