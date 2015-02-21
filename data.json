@@ -1,23 +1,15 @@
 {
-  "name": "skill",
+  "name": "Qualification and Skills",
   "children": [
     {
-      "name": "data visualization",
+      "name": "Scrum",
       "children": [
         {
-          "name": "d3",
+          "name": "CAP Logistics",
           "children": [
-            {"name": "job or project where used", "size": 3938},
-            {"name": "job or project where used", "size": 3812},
-            {"name": "job or project where used", "size": 743}
-          ]
-        },
-        {
-          "name": "HighCharts",
-          "children": [
-            {"name": "job or project where used", "size": 3938},
-            {"name": "job or project where used", "size": 3812},
-            {"name": "job or project where used", "size": 743}
+            {"name": "Proprietary CRM"},
+            {"name": "REST API"},
+            {"name": "Geospatial business analysis platform"}
           ]
         }
       ]
@@ -28,17 +20,37 @@
         {
           "name": "d3",
           "children": [
-            {"name": "job or project where used", "size": 3938},
-            {"name": "job or project where used", "size": 3812},
-            {"name": "job or project where used", "size": 743}
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "Proprietary CRM"},
+                {"name": "Geospatial business analysis platform"}
+              ]
+            }
           ]
         },
         {
           "name": "jQuery",
           "children": [
-            {"name": "job or project where used", "size": 3938},
-            {"name": "job or project where used", "size": 3812},
-            {"name": "job or project where used", "size": 743}
+            {"name": "job or project where used"},
+            {"name": "job or project where used"},
+            {"name": "job or project where used"}
+          ]
+        },
+        {
+          "name": "KnockoutJS",
+          "children": [
+            {"name": "job or project where used"},
+            {"name": "job or project where used"},
+            {"name": "job or project where used"}
+          ]
+        },
+        {
+          "name": "EXTJS",
+          "children": [
+            {"name": "job or project where used"},
+            {"name": "job or project where used"},
+            {"name": "job or project where used"}
           ]
         }
       ]
