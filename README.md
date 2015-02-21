@@ -23,24 +23,24 @@ You need a hierarchical JSON data file.
 Format:
 ```
 {
-  "name": "flare",
+  "name": "skill",
   "children": [
     {
-      "name": "analytics",
+      "name": "data visualization",
       "children": [
         {
-          "name": "cluster",
+          "name": "d3",
           "children": [
-            {"name": "AgglomerativeCluster", "size": 3938},
-            {"name": "CommunityStructure", "size": 3812},
-            {"name": "MergeEdge", "size": 743}
+            {"name": "tree", "size": 3938},
+            {"name": "box plot", "size": 3812},
+            {"name": "chord diagram", "size": 743}
           ]
         },
         {
-          "name": "graph",
+          "name": "JavaScript",
           "children": [
-            {"name": "BetweennessCentrality", "size": 3534},
-            {"name": "LinkDistance", "size": 5731}
+            {"name": "jQuery", "size": 3534},
+            {"name": "D3", "size": 5731}
           ]
         }
       ]
