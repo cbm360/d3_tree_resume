@@ -1,96 +1,48 @@
-d3-resume
+d3_tree_resume
 =========
 
-D3.js based resume visualizer
+This is an animated d3.js tree visualization.
 
-Demo
-----
-http://germanlena.com.ar/experience
-
-
-How to
-------
-Just include the D3.js library
+Required Resources
+------------------
+External Libraries
 ```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 ```
 
-and then the resume.js
+Project Files
 ```
 <script src="http://rawgithub.com/glena/d3-resume/master/d3resume.min.js"></script>
 ```
 
-and finally, instanciate the graph:
+Creating the data
+-----------------
+You need a hierarchical JSON data file, see the following format.
 
-```
-var resume = new d3Resume({
-  width: 900,
-  height: 900,
-  wrapperSelector: "article.resume",
-  dataUrl: 'data.json',
-  getItemFillCollor: function (item) {
-    return '#' + (function co(lor){   return (lor +=
-      [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f'][Math.floor(Math.random()*16)])
-      && (lor.length == 6) ?  lor : co(lor); })('');
-  }
-});
-```
-*getItemFillCollor* is a callback invoked to get the item color. It receives the experience or education item by param.
-
-Data source
------------
-You need to create a file with your experience and studies formatted as json.
-
-Format:
-```
 {
-	"experience":[
-		{
-			"type":"Work",
-			"institution":"First job institution",
-			"title":"The job title!",
-			"from":"2006-05-01",
-			"to":"2006-09-30",
-			"description":"all what i have done \n and this is a second line",
-			"default_item":false
-		},
-		{
-			"type":"Trainee",
-			"institution":"Seocond job institution",
-			"title":"The jon title!",
-			"from":"2006-05-01",
-			"to":null, /* because this is my current job, it doesn't have an end date */
-			"description":"all what i have done \n and this is a second line",
-			"default_item":true
-		}
-	],
-	"study":[
-		{
-			"type":"Study",
-			"institution":"Fist stydy",
-			"title":"My title",
-			"from":"2007-03-01",
-			"to":"2011-12-20",
-			"description":"",
-			"default_item":false
-		},
-		{
-			"type":"Study",
-			"institution":"Also, I study another thing",
-			"title":"IDK",
-			"from":"2013-08-30",
-			"to":null,
-			"description":"",
-			"default_item":false
-		}
-	]
+  "name": "flare",
+  "children": [
+    {
+      "name": "analytics",
+      "children": [
+        {
+          "name": "cluster",
+          "children": [
+            {"name": "AgglomerativeCluster", "size": 3938},
+            {"name": "CommunityStructure", "size": 3812},
+            {"name": "MergeEdge", "size": 743}
+          ]
+        },
+        {
+          "name": "graph",
+          "children": [
+            {"name": "BetweennessCentrality", "size": 3534},
+            {"name": "LinkDistance", "size": 5731}
+          ]
+        }
+      ]
+    }
+  ]
 }
-```
 
-Notes:
-type: is the text shown on the first line.
-to: if this attribute is null, it will count as an ongoing job/study and will be shown as an unfinished one.
-description: when a "\n" is found will generate a new line (because SVG does not support text wrapping at the moment).
-default_item: if this attribute is null, it will be the default text when there is no item selected.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-51467836-1/glena/d3-resume)](http://germanlena.com.ar)
