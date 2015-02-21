@@ -13,7 +13,7 @@ External Libraries
 
 Project Files
 ```
-<script src="http://rawgithub.com/glena/d3-resume/master/d3resume.min.js"></script>
+<script src="http://rawgithub.com/cbm360/d3_tree_resume/master/d3resume.js"></script>
 ```
 
 Creating the data
