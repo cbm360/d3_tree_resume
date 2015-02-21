@@ -73,7 +73,6 @@ Format:
 
 Helpful Resources
 -----------------
-```
 https://github.com/mbostock/d3/wiki/Gallery
 http://mbostock.github.io/d3/talk/20111018/tree.html
-```
+
