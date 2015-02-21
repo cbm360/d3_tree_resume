@@ -28,6 +28,17 @@
               ]
             }
           ]
+        },
+        {
+          "name": "API Integration",
+          "children": [
+            {
+              "name": "CAP Logistics",
+              "children": [
+                {"name": "CRUD operations for proprietary CRM"}
+              ]
+            }
+          ]
         }
       ]
     },
