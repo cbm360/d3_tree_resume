@@ -32,62 +32,67 @@
       ]
     },
     {
-      "name": "JavaScript",
+      "name": "Technical Skills",
       "children": [
         {
-          "name": "d3",
+          "name": "JavaScript",
           "children": [
             {
-              "name": "CAP Logistics",
+              "name": "d3",
               "children": [
-                {"name": "Proprietary CRM"},
-                {"name": "Geospatial business analysis platform"}
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Proprietary CRM"},
+                    {"name": "Geospatial business analysis platform"}
+                  ]
+                }
               ]
-            }
-          ]
-        },
-        {
-          "name": "jQuery",
-          "children": [
+            },
             {
-              "name": "CAP Logistics",
+              "name": "jQuery",
               "children": [
-                {"name": "Proprietary CRM"},
-                {"name": "Geospatial business analysis platform"}
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Proprietary CRM"},
+                    {"name": "Geospatial business analysis platform"}
+                  ]
+                }
               ]
-            }
-          ]
-        },
-        {
-          "name": "KnockoutJS",
-          "children": [
+            },
             {
-              "name": "CAP Logistics",
+              "name": "KnockoutJS",
               "children": [
-                {"name": "Proprietary CRM"}
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Proprietary CRM"}
+                  ]
+                }
               ]
-            }
-          ]
-        },
-        {
-          "name": "EXTJS",
-          "children": [
+            },
             {
-              "name": "CAP Logistics",
+              "name": "EXTJS",
               "children": [
-                {"name": "Geospatial business analysis platform"}
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Geospatial business analysis platform"}
+                  ]
+                }
               ]
-            }
-          ]
-        },
-        {
-          "name": "MapBox/Leaflet",
-          "children": [
+            },
             {
-              "name": "CAP Logistics",
+              "name": "MapBox/Leaflet",
               "children": [
-                {"name": "Proprietary CRM"},
-                {"name": "Geospatial business analysis platform"}
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Proprietary CRM"},
+                    {"name": "Geospatial business analysis platform"}
+                  ]
+                }
               ]
             }
           ]
