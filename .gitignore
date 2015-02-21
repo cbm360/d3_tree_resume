@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+#Ignore WebStorm IDE settings
+.idea
+
+
+#Ignore data file
+data.json

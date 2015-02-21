@@ -31,16 +31,38 @@ Format:
         {
           "name": "d3",
           "children": [
-            {"name": "tree", "size": 3938},
-            {"name": "box plot", "size": 3812},
-            {"name": "chord diagram", "size": 743}
+            {"name": "job or project where used", "size": 3938},
+            {"name": "job or project where used", "size": 3812},
+            {"name": "job or project where used", "size": 743}
           ]
         },
         {
-          "name": "JavaScript",
+          "name": "HighCharts",
           "children": [
-            {"name": "jQuery", "size": 3534},
-            {"name": "D3", "size": 5731}
+            {"name": "job or project where used", "size": 3938},
+            {"name": "job or project where used", "size": 3812},
+            {"name": "job or project where used", "size": 743}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "children": [
+        {
+          "name": "d3",
+          "children": [
+            {"name": "job or project where used", "size": 3938},
+            {"name": "job or project where used", "size": 3812},
+            {"name": "job or project where used", "size": 743}
+          ]
+        },
+        {
+          "name": "jQuery",
+          "children": [
+            {"name": "job or project where used", "size": 3938},
+            {"name": "job or project where used", "size": 3812},
+            {"name": "job or project where used", "size": 743}
           ]
         }
       ]
