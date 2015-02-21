@@ -308,6 +308,41 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Database",
+          "children": [
+            {
+              "name": "SQL",
+              "children": [
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Create organizational reporting view schema"},
+                    {"name": "Actionable organizational BI"},
+                    {"name": "Sales team BI"},
+                    {"name": "Vehicle asset allocation team BI"},
+                    {"name": "Consolidated executive dashboard"},
+                    {"name": "Proprietary CRM"},
+                    {"name": "REST API"},
+                    {"name": "Geospatial business analysis platform"}
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "MongoDB",
+              "children": [
+                {
+                  "name": "CAP Logistics",
+                  "children": [
+                    {"name": "Proprietary CRM"},
+                    {"name": "Development knowledge base"}
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

@@ -36,7 +36,11 @@ $(function () {
         // Initialize the display to show a few nodes.
         root.children.forEach(collapse);
         click(root.children[0]);
+
         click(root.children[1]);
+        click(root.children[1].children[0]);
+        click(root.children[1].children[3]);
+        click(root.children[1].children[6]);
 
         update(root);
     });
