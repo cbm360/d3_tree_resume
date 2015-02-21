@@ -18,8 +18,10 @@ Project Files
 
 Creating the data
 -----------------
-You need a hierarchical JSON data file, see the following format.
+You need a hierarchical JSON data file.
 
+Format:
+```
 {
   "name": "flare",
   "children": [
@@ -45,4 +47,4 @@ You need a hierarchical JSON data file, see the following format.
     }
   ]
 }
-
+```
