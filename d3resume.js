@@ -18,13 +18,13 @@ $(function () {
     var diagonal = d3.svg.diagonal()
         .projection(function(d) { return [d.y, d.x]; });
 
-    var svg = d3.select("#about").append("svg")
+    var svg = d3.select("section").append("svg")
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("app/data/resumeData.js", function(error, AboutMe) {
+    d3.json("data.json", function(error, AboutMe) {
         root = AboutMe;
         root.x0 = height / 2;
         root.y0 = 0;
@@ -100,7 +100,7 @@ $(function () {
                     return minRadius;
                 }
             })
-            .style("fill", function(d) { return d._children ? "rgb(254,209,54)" : "#fff"; });
+            .style("fill", function(d) { return d._children ? "steelblue" : "#fff"; });
 
         nodeUpdate.select("text")
             .style("fill-opacity", 1);
