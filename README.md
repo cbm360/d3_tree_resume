@@ -3,6 +3,11 @@ d3_tree_resume
 
 This is an animated d3.js tree visualization.
 
+Example
+-------
+http://www.camronmoore.com/#about
+
+
 Required Resources
 ------------------
 External Libraries
