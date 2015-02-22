@@ -1,8 +1,12 @@
 $(function () {
-    var margin = {top: 20, right: 120, bottom: 20, left: 120},
+    var margin = {top: 10, right: 120, bottom: 10, left: 120},
         sectionWidth = $('section').width(),
         width = sectionWidth - margin.right - margin.left,
         height = 600 - margin.top - margin.bottom;
+
+    var minRadius = 4.5,
+        maxRadius = 10,
+        scale = d3.scale.linear().range([1,3]);
 
     var i = 0,
         duration = 750,
@@ -14,13 +18,13 @@ $(function () {
     var diagonal = d3.svg.diagonal()
         .projection(function(d) { return [d.y, d.x]; });
 
-    var svg = d3.select("section").append("svg")
+    var svg = d3.select("#about").append("svg")
         .attr("width", width + margin.right + margin.left)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("data.json", function(error, AboutMe) {
+    d3.json("app/data/resumeData.js", function(error, AboutMe) {
         root = AboutMe;
         root.x0 = height / 2;
         root.y0 = 0;
@@ -68,10 +72,10 @@ $(function () {
 
         nodeEnter.append("circle")
             .attr("r", 1e-6)
-            .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            .style("fill", function(d) { return d._children ? "rgb(254,209,54)" : "#fff"; });
 
         nodeEnter.append("text")
-            .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+            .attr("x", function(d) { return d.children || d._children ? -20 : 10; })
             .attr("dy", ".35em")
             .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
             .text(function(d) { return d.name; })
@@ -83,8 +87,20 @@ $(function () {
             .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
         nodeUpdate.select("circle")
-            .attr("r", 4.5)
-            .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            .attr("r", function(d) {
+                if(d.children)
+                    if (d.children.length > maxRadius) {
+                        return maxRadius;
+                    } else {
+                        return scale(d.children.length);
+                    }
+                else if(d._children) {
+                    return scale(d._children.length);
+                } else {
+                    return minRadius;
+                }
+            })
+            .style("fill", function(d) { return d._children ? "rgb(254,209,54)" : "#fff"; });
 
         nodeUpdate.select("text")
             .style("fill-opacity", 1);
@@ -145,6 +161,5 @@ $(function () {
         }
         update(d);
     }
-
 
 });
